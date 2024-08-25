@@ -63,6 +63,7 @@ export const handleXeroCallback = async (req: Request, res: Response) => {
             code,
         }));
 
+        // Store the token in the session
         req.session.xeroToken = response.data;
         res.send('Xero OAuth successful');
     } catch (error) {

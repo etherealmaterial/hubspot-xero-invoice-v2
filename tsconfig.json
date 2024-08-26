@@ -1,16 +1,13 @@
 {
-    "compilerOptions": {
-      "target": "ES6",
-      "module": "commonjs",
-      "strict": true,
-      "esModuleInterop": true,           // This flag allows default imports from CommonJS modules
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "outDir": "./dist",
-      "rootDir": "./src",
-      "resolveJsonModule": true,
-      "sourceMap": true
-    },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules"]
-  }
+  "compilerOptions": {
+    "outDir": "./dist",        // Specifies the output directory for compiled files
+    "target": "ES6",           // Set the target JavaScript version
+    "module": "commonjs",      // Specify the module code generation
+    "strict": true,            // Enable all strict type-checking options
+    "esModuleInterop": true,   // Enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,      // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],  // Specifies the files to include in the compilation
+  "exclude": ["node_modules"]  // Excludes node_modules from the compilation
+}

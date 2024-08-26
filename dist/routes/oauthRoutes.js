@@ -8,4 +8,3 @@ router.get('/auth/hubspot/callback', oauthController_1.handleHubSpotCallback);
 router.get('/auth/xero', oauthController_1.initiateXeroAuth);
 router.get('/auth/xero/callback', oauthController_1.handleXeroCallback);
 exports.default = router;
-//# sourceMappingURL=oauthRoutes.js.map
